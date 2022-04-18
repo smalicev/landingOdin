@@ -1,0 +1,9 @@
+/* style sheet for landing page*/
+
+
+
+.content{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
