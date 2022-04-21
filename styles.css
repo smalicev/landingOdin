@@ -10,17 +10,31 @@ body{
 .landingzone{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #1F2937;
     color: white;
-    gap: 24px;
+    gap: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .landingzonetxt {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:300px;
+    width:700px;
+}
+
+.rightland{
+    display:flex;
+    padding-right:300px;
+}
+
+.leftland{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    padding-left:300px;
 }
 
 button{
@@ -31,6 +45,19 @@ button{
     color: white;
 }
 
+.button{
+    padding: 8px 16px;
+    border-radius: 8px;
+    width:86px;
+    background-color: lightblue;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
 .content{
     display:flex;
     flex-direction: column;
@@ -40,17 +67,20 @@ button{
 .specialties{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap:25px;
     align-items: center;
+    padding:40px;
 }
 
 .header{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
     flex: 1 1 0;
     background-color: #1F2937;
     color:white;
     font-weight:bold;
+    justify-content: space-between;
 }
 
 li{
@@ -75,12 +105,14 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 img {
     margin: 2px;
     padding:8px;
-    border: 5px solid blue;
+    border: 3px solid blue;
+    border-radius: 8px;
 }
 
 .testimonial{
@@ -92,18 +124,45 @@ img {
 
 .calltoact{
     display:flex;
+    flex:direction: row;
     justify-content: center;
+    padding: 60px;
 }
 
-.signupcard{
+.signupcard {
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     padding:36px;
     background-color: #3882F6;
+    border-radius: 8px;
+    gap: 500px;
+    align-items:center;
 }
 
 .footer{
     display:flex;
     justify-content: center;
     background-color: #1F2937;
+    color: white;
+}
+
+.rightheader{
+    display:flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content:flex-end;
+    padding-right: 300px;
+}
+
+.leftheader{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    padding-left: 300px;
+}
+
+.signuptext{
+    display:flex;
+    flex-direction:column;
 }
