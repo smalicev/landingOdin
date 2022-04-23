@@ -2,18 +2,27 @@
 
 
 body{
+    height: 100vh;
     font-family: Roboto, sans-serif;
     display:flex;
     flex-direction: column;
+    flex: 1 1 0;
+    
+}
+
+a:link{
+    text-decoration: none;
 }
 
 .landingzone{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #1F2937;
     color: white;
-    gap: 0px;
+    gap: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -22,41 +31,45 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:700px;
+    width:400px;
 }
 
+.landingzonetxt h1{
+    color: #F9FaF8;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.rightland img{
+    width:800px;
+    height: auto;
+
+}
 .rightland{
     display:flex;
-    padding-right:300px;
 }
 
 .leftland{
     display:flex;
     flex-direction:row;
-    justify-content: flex-start;
-    padding-left:300px;
+    padding-left:100px;
+    width:500px;
 }
 
-button{
-    padding: 8px 16px;
+span{
+    padding: 8px 12px;
     border-radius: 8px;
     width:86px;
-    background-color: lightblue;
-    color: white;
-}
-
-.button{
-    padding: 8px 16px;
-    border-radius: 8px;
-    width:86px;
-    background-color: lightblue;
+    background-color:#3882F6;
     color: white;
     display:flex;
     justify-content: center;
     align-items:center;
 }
 
-
+.signupcard span{
+    border: 1px solid white;
+}
 
 .content{
     display:flex;
@@ -64,13 +77,23 @@ button{
     align-items: stretch;
 }
 
-.specialties{
+.specialties {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap:25px;
     align-items: center;
     padding:40px;
+}
+
+.rightland img{
+    border-radius: 36px;
+}
+
+.specialties h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
 }
 
 .header{
@@ -80,7 +103,8 @@ button{
     background-color: #1F2937;
     color:white;
     font-weight:bold;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 700px;
 }
 
 li{
@@ -108,7 +132,7 @@ li{
     flex-wrap: wrap;
 }
 
-img {
+.cards img {
     margin: 2px;
     padding:8px;
     border: 3px solid blue;
@@ -122,24 +146,42 @@ img {
     padding: 78px;
 }
 
+
+.testimonial h3{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1f2937;
+
+}
+
 .calltoact{
     display:flex;
-    flex:direction: row;
-    justify-content: center;
+    flex-direction: row;
     padding: 60px;
+    justify-content: center;
 }
 
 .signupcard {
     display:flex;
     justify-content: space-between;
-    padding:36px;
+    padding-top:36px;
+    padding-bottom:36px;
+    padding-left: 80px;
+    padding-right: 80px;
     background-color: #3882F6;
-    border-radius: 8px;
-    gap: 500px;
+    border-radius: 12px;
     align-items:center;
+    gap: 400px;
+}
+
+.signupcard .button {
+    border-color: white;
+    border: 1px solid white;
 }
 
 .footer{
+    margin-bottom:auto;
     display:flex;
     justify-content: center;
     background-color: #1F2937;
@@ -152,17 +194,25 @@ img {
     gap: 8px;
     align-items: center;
     justify-content:flex-end;
-    padding-right: 300px;
+    padding-right: 0px;
 }
 
 .leftheader{
     display:flex;
     flex-direction:row;
     justify-content: flex-start;
-    padding-left: 300px;
+    font-size: 24px;
+    color: #F9FAF8;
+    
 }
 
-.signuptext{
+.signuptext {
     display:flex;
     flex-direction:column;
+    justify-content: center;
+    color: #F9FAF8;
+}
+
+.signuptext h3{
+    font-weight: bold;
 }
